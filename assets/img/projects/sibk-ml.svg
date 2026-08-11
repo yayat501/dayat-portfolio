@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="520" viewBox="0 0 880 520">
+    <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#eff6ff"/><stop offset="1" stop-color="#f8fafc"/></linearGradient></defs>
+    <rect width="880" height="520" rx="26" fill="url(#g)"/>
+    <text x="60" y="60" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">Sistem Machine Learning BK</text>
+    <text x="60" y="92" font-family="Arial, sans-serif" font-size="16" fill="#64748b">Klasifikasi permasalahan siswa</text>
+    
+        <rect x="60" y="118" width="760" height="360" rx="18" fill="#ffffff"/>
+        <rect x="80" y="142" width="112" height="315" rx="12" fill="#0f172a"/>
+        <rect x="215" y="142" width="180" height="68" rx="12" fill="#eef2ff"/>
+        <rect x="415" y="142" width="180" height="68" rx="12" fill="#f0fdf4"/>
+        <rect x="615" y="142" width="180" height="68" rx="12" fill="#fff7ed"/>
+        <circle cx="340" cy="338" r="94" fill="#dbeafe"/>
+        <path d="M340 244 A94 94 0 0 1 416 394 L340 338 Z" fill="#2563eb"/>
+        <path d="M340 338 L416 394 A94 94 0 0 1 274 409 Z" fill="#22c55e"/>
+        <path d="M340 338 L274 409 A94 94 0 0 1 340 244 Z" fill="#f59e0b"/>
+        <rect x="500" y="265" width="250" height="30" rx="8" fill="#dbeafe"/>
+        <rect x="500" y="320" width="210" height="24" rx="8" fill="#e2e8f0"/>
+        <rect x="500" y="365" width="238" height="24" rx="8" fill="#e2e8f0"/>
+        
+    </svg>

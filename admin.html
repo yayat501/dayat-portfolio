@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="id">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kelola Portofolio — Dayat Developer</title><link rel="stylesheet" href="assets/css/style.css"></head>
+<body class="admin-page">
+  <div class="admin-wrap">
+    <div class="admin-top">
+      <div><div class="eyebrow">Admin Lokal</div><h1 style="margin:5px 0">Kelola Portofolio</h1><div class="small">Tambah, edit, atau hapus project tanpa menyentuh HTML.</div></div>
+      <a href="index.html" class="btn btn-outline">← Lihat Website</a>
+    </div>
+
+    <div class="notice"><strong>Penting untuk GitHub Pages:</strong> halaman ini tidak bisa menulis langsung ke server GitHub. Setelah selesai mengubah data, klik <b>Download portfolio-data.js</b>, lalu ganti file <code>assets/js/portfolio-data.js</code> di repository GitHub agar perubahan terlihat oleh semua pengunjung.</div>
+
+    <section class="admin-card">
+      <h2>Profil & Kontak</h2>
+      <div class="form-grid">
+        <div class="field"><label>Brand</label><input name="brand"></div>
+        <div class="field"><label>Nama</label><input name="name"></div>
+        <div class="field full"><label>Judul Utama</label><input name="headline"></div>
+        <div class="field full"><label>Deskripsi Hero</label><textarea name="subheadline"></textarea></div>
+        <div class="field full"><label>Tentang Saya</label><textarea name="about"></textarea></div>
+        <div class="field"><label>Lokasi</label><input name="location"></div>
+        <div class="field"><label>WhatsApp (format 62...)</label><input name="whatsapp"></div>
+        <div class="field"><label>Instagram URL</label><input name="instagram"></div>
+        <div class="field"><label>GitHub URL</label><input name="github"></div>
+        <div class="field"><label>Email</label><input name="email"></div>
+      </div>
+      <div class="admin-actions"><button id="saveProfile" class="btn btn-primary">Simpan Profil</button><span id="status" class="small"></span></div>
+    </section>
+
+    <section class="admin-card">
+      <div class="admin-top" style="margin:0"><div><h2 style="margin:0">Daftar Project</h2><div class="small">Project baru akan otomatis tampil di halaman utama.</div></div><button id="addProject" class="btn btn-primary">+ Tambah Project</button></div>
+      <div id="projectAdminList"></div>
+    </section>
+
+    <section class="admin-card" id="projectEditor">
+      <h2>Form Project</h2>
+      <form id="projectForm" onsubmit="return false">
+        <input type="hidden" id="editIndex" value="-1">
+        <div class="form-grid">
+          <div class="field"><label>Nama Project *</label><input id="pTitle"></div>
+          <div class="field"><label>Kategori</label><input id="pCategory" placeholder="POS / Sistem Informasi / Event"></div>
+          <div class="field full"><label>Deskripsi</label><textarea id="pDesc"></textarea></div>
+          <div class="field full"><label>Fitur (1 baris = 1 fitur)</label><textarea id="pFeatures" placeholder="Login admin&#10;Dashboard&#10;Laporan"></textarea></div>
+          <div class="field full"><label>Teknologi (pisahkan koma)</label><input id="pStack" placeholder="Laravel, PHP, MySQL, React"></div>
+          <div class="field full"><label>Gambar (URL atau path file)</label><input id="pImage" placeholder="assets/img/projects/nama-gambar.jpg"></div>
+          <div class="field"><label>Link Demo (opsional)</label><input id="pDemo" placeholder="https://..."></div>
+          <div class="field"><label>Link GitHub (opsional)</label><input id="pGithub" placeholder="https://github.com/..."></div>
+        </div>
+        <div class="admin-actions"><button id="saveProject" class="btn btn-primary">Simpan Project</button><button id="cancelProject" class="btn btn-outline">Batal / Kosongkan</button></div>
+      </form>
+    </section>
+
+    <section class="admin-card">
+      <h2>Publikasikan Perubahan</h2>
+      <p class="small">Untuk GitHub Pages, gunakan tombol pertama. File hasil download tinggal menggantikan <code>assets/js/portfolio-data.js</code> di repository.</p>
+      <div class="admin-actions">
+        <button id="exportJS" class="btn btn-primary">Download portfolio-data.js</button>
+        <button id="exportJSON" class="btn btn-outline">Backup JSON</button>
+        <label class="btn btn-outline">Import JSON<input id="importFile" type="file" accept=".json" hidden></label>
+        <button id="resetData" class="btn danger">Reset Data</button>
+      </div>
+    </section>
+  </div>
+  <script src="assets/js/portfolio-data.js"></script>
+  <script src="assets/js/admin.js"></script>
+</body></html>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="520" viewBox="0 0 880 520">
+    <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#eff6ff"/><stop offset="1" stop-color="#f8fafc"/></linearGradient></defs>
+    <rect width="880" height="520" rx="26" fill="url(#g)"/>
+    <text x="60" y="60" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">Selayar Virtual Run 2026</text>
+    <text x="60" y="92" font-family="Arial, sans-serif" font-size="16" fill="#64748b">Event olahraga berbasis web</text>
+    
+        <rect x="60" y="118" width="760" height="360" rx="18" fill="#071b2f"/>
+        <circle cx="680" cy="300" r="130" fill="#0e7490" opacity=".45"/>
+        <path d="M120 390 C240 280, 300 330, 420 230 S650 240, 770 175" fill="none" stroke="#38bdf8" stroke-width="10"/>
+        <circle cx="120" cy="390" r="13" fill="#22c55e"/>
+        <circle cx="770" cy="175" r="13" fill="#ef4444"/>
+        <rect x="105" y="165" width="265" height="55" rx="12" fill="#ffffff" opacity=".12"/>
+        <rect x="105" y="245" width="185" height="36" rx="10" fill="#2563eb"/>
+        <rect x="105" y="305" width="145" height="25" rx="8" fill="#ffffff" opacity=".22"/>
+        
+    </svg>
