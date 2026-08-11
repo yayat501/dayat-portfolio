@@ -9,7 +9,7 @@ window.PORTFOLIO_DATA = {
     "whatsapp": "6285657000690",
     "instagram": "https://www.instagram.com/bang_dayat55/",
     "github": "https://github.com/",
-    "email": "dayatdeveloper@gmail.com"
+    "email": "dayatnya501@gmail.com"
   },
   "projects": [
     {
